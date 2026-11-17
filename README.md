@@ -1,34 +1,52 @@
 # SonarQube Notes
 
-This repository contains my learning notes on **SonarQube**, code quality, and integrating code analysis into a DevOps CI/CD workflow.
+A structured collection of my SonarQube learning notes, DevSecOps concepts, practical installation steps, CI/CD integration examples and troubleshooting points.
 
-The notes cover both the concepts behind SonarQube and the practical steps involved in setting up and integrating it with development tools.
+## Learning Progress
 
-## Documentation
+### Introduction, Architecture and DevSecOps Concepts
 
-| Document | Description |
-|---|---|
-| [SonarQube Notes](SonarQube-Notes.md) | Covers SonarQube fundamentals, DevSecOps concepts, SAST, DAST, SCA, SBOM, architecture, code quality analysis, Quality Profiles, Quality Gates, code coverage, JaCoCo, Maven, Jenkins integration, and practical scenarios. |
-| [SonarQube Installation and Integration](SonarQube-Installation-and-Integration.md) | Covers the practical setup of SonarQube Server on Ubuntu 24.04 and Amazon Linux 2023, PostgreSQL configuration, Java 21, service management, Maven analysis, JaCoCo reports, Jenkins integration, and troubleshooting. |
+[Read SonarQube Theory Notes](https://github.com/SrinivasGit55/SonarQube-Notes/blob/main/SonarQube-Notes.md)
 
-## Suggested Learning Path
+**Covered topics:**
 
-1. Read **SonarQube Notes** to understand the concepts, terminology, architecture, and role of SonarQube in a CI/CD pipeline.
-2. Continue with **SonarQube Installation and Integration** to understand the server setup and integration workflow.
-3. Use the troubleshooting scenarios to understand common configuration and connectivity issues.
-
-## Key Areas Covered
-
-- SonarQube and its role in DevSecOps
-- Static Application Security Testing (SAST), Dynamic Application Security Testing (DAST), and Software Composition Analysis (SCA)
-- SonarQube Server and Scanner architecture
-- Bugs, vulnerabilities, Security Hotspots, and code smells
+- Introduction to SonarQube and its role in DevSecOps
+- Shift Left Security and secure software development
+- SAST, DAST, SCA and SBOM concepts
+- SonarQube architecture: Server, Scanner, Database and Elasticsearch
+- Bugs, Vulnerabilities, Security Hotspots and Code Smells
 - Quality Profiles and Quality Gates
-- Code coverage using JaCoCo
+- New Code versus Overall Code analysis
+- Code Coverage and JaCoCo integration
 - Maven-based code analysis
-- Jenkins integration and Quality Gate enforcement
-- Installation and troubleshooting on Linux environments
+- Jenkins integration and Quality Gate checks
+- SonarQube in a CI/CD workflow
+- Practical scenarios and troubleshooting
 
-## Learning Objective
+### Practical Installation and Integration
 
-The objective of these notes is to build an understanding of how code quality and security analysis can be included in a CI/CD workflow, and how SonarQube can help identify code issues before software is released.
+[Read SonarQube Installation and Integration Notes](https://github.com/SrinivasGit55/SonarQube-Notes/blob/main/SonarQube-Installation-and-Integration.md)
+
+**Covered topics:**
+
+- SonarQube Server installation on Ubuntu 24.04
+- SonarQube Server installation on AWS Amazon Linux 2023
+- Java 21 installation and configuration
+- PostgreSQL installation and database configuration
+- Linux kernel prerequisites for Elasticsearch
+- SonarQube user, directory and permission configuration
+- SonarQube service configuration using systemd
+- Accessing SonarQube through port 9000
+- Maven project analysis using SonarScanner for Maven
+- JaCoCo code coverage report generation
+- Jenkins and SonarQube integration
+- Jenkins credentials and SonarQube authentication
+- Quality Gate integration using `waitForQualityGate`
+- Webhook configuration
+- Installation, connectivity and integration troubleshooting
+
+## Learning Approach
+
+These notes are organized into theory and practical implementation sections. The focus is on understanding SonarQube architecture, code quality analysis, security concepts and how automated code analysis integrates with Jenkins and Maven in a CI/CD pipeline.
+
+The practical examples cover Linux-based installation, database configuration, project analysis, Quality Gate enforcement and troubleshooting to build an understanding of how SonarQube supports code quality and security in real-world DevOps workflows.
